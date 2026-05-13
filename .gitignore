@@ -1,0 +1,12 @@
+node_modules/
+.next/
+dist/
+coverage/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.env.local
+.env.*.local
+

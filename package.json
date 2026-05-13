@@ -1,0 +1,17 @@
+{
+  "name": "campus-ai-canvas-platform",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@11.8.0",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "web:dev": "npm run dev --workspace apps/web",
+    "backend:dev": "python -m uvicorn app.main:app --reload --app-dir apps/backend",
+    "lint": "npm run lint --workspace apps/web",
+    "test": "node scripts/test.mjs"
+  }
+}
+
